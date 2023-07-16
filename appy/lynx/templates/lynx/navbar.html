@@ -1,0 +1,60 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+
+   <div style="margin-left: 1%; padding: 1% 0"> <a class="navbar-brand main-heading" href="{% url '' %}"> 
+                  
+    &nbsp; Idirit <span><img style="width:10%;color: blue" src="images/nature.svg" alt=""></span>
+  
+  </a> </div> 
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+  
+      </button>
+  
+  
+        <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
+  
+          
+          <ul class="navbar-nav ml-auto">
+  
+  
+            &nbsp;     &nbsp;     &nbsp; 
+  
+  
+            <li class="nav-item">
+        
+              <a href="{% url 'dashboard' %}">Dashboard</a>
+  
+            </li>
+  
+  
+            &nbsp;     &nbsp;     &nbsp; 
+            <li class="nav-item">
+            <a href="{% url 'profile_management' %}">Edit profile</a>            
+            </li>
+            &nbsp;     &nbsp;     &nbsp; 
+            <li class="nav-item">
+  
+              <a href="{% url 'user_logout' %}">Logout</a>
+  
+            </li>
+  
+  
+            &nbsp;     &nbsp;     &nbsp; 
+            
+  
+          </ul>
+        
+          
+        </div>
+  
+  
+    </nav>
