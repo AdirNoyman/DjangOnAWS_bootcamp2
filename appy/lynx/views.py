@@ -72,6 +72,7 @@ def user_logout(request):
 
 @login_required(login_url='login')
 def profile_management(request):
+    # Load current user signed into the user form
     user_form = UpdateUserForm(instance=request.user)
     # Get the profile picture of the user that is signed in
     profile = Profile.objects.get(user=request.user)
